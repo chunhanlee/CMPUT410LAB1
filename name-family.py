@@ -6,12 +6,17 @@ class Student:
         self.family = family
     def addCourseMark(self, course, mark):
         self.courseMarks[course] = mark
+        return
     def average(self):
         counter = 0
         avg = 0
-        for value in courseMarks:
-            avg = avg + value
+        for key, value in self.courseMarks.items():
+            avg = avg + int(value)
             counter +=1
+        avg = avg / counter
+        return avg
 c = Student("John", "family")
-c.addCourseMark("80", "Math")
-print (c.average)
+c.addCourseMark("Math", "80")
+c.addCourseMark("Science", "70")
+c.addCourseMark("English", "90")
+print(c.average())
