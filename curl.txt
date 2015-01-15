@@ -1,2 +1,4 @@
 1) curl slashdot.org > slashdot.html
 2) curl www.reddit.com > reddit.html
+3) curl -request GET slashdot.org > slashdot.txt
+4) curl -request GET www.reddit.com > reddit.txt
