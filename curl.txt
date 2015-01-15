@@ -1,0 +1,2 @@
+1) curl slashdot.org > slashdot.html
+2) curl www.reddit.com > reddit.html
